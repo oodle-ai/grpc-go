@@ -25,19 +25,19 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/internal/stubserver"
-	rlstest "google.golang.org/grpc/internal/testutils/rls"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/status"
+	"github.com/oodle-ai/grpc-go"
+	"github.com/oodle-ai/grpc-go/codes"
+	"github.com/oodle-ai/grpc-go/credentials/insecure"
+	"github.com/oodle-ai/grpc-go/internal/grpcsync"
+	"github.com/oodle-ai/grpc-go/internal/stubserver"
+	rlstest "github.com/oodle-ai/grpc-go/internal/testutils/rls"
+	"github.com/oodle-ai/grpc-go/metadata"
+	"github.com/oodle-ai/grpc-go/status"
 	"google.golang.org/protobuf/types/known/durationpb"
 
-	rlspb "google.golang.org/grpc/internal/proto/grpc_lookup_v1"
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
+	rlspb "github.com/oodle-ai/grpc-go/internal/proto/grpc_lookup_v1"
+	testgrpc "github.com/oodle-ai/grpc-go/interop/grpc_testing"
+	testpb "github.com/oodle-ai/grpc-go/interop/grpc_testing"
 )
 
 // TestNoNonEmptyTargetsReturnsError tests the case where the RLS Server returns

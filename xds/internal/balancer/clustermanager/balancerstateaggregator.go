@@ -22,10 +22,10 @@ import (
 	"fmt"
 	"sync"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/base"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/grpclog"
+	"github.com/oodle-ai/grpc-go/balancer"
+	"github.com/oodle-ai/grpc-go/balancer/base"
+	"github.com/oodle-ai/grpc-go/connectivity"
+	"github.com/oodle-ai/grpc-go/internal/grpclog"
 )
 
 type subBalancerState struct {

@@ -32,15 +32,15 @@ import (
 	"go.opencensus.io/tag"
 	"go.opencensus.io/trace"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/encoding/gzip"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/leakcheck"
-	"google.golang.org/grpc/internal/stubserver"
-	"google.golang.org/grpc/internal/testutils"
+	"github.com/oodle-ai/grpc-go"
+	"github.com/oodle-ai/grpc-go/encoding/gzip"
+	"github.com/oodle-ai/grpc-go/internal/grpctest"
+	"github.com/oodle-ai/grpc-go/internal/leakcheck"
+	"github.com/oodle-ai/grpc-go/internal/stubserver"
+	"github.com/oodle-ai/grpc-go/internal/testutils"
 
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
+	testgrpc "github.com/oodle-ai/grpc-go/interop/grpc_testing"
+	testpb "github.com/oodle-ai/grpc-go/interop/grpc_testing"
 )
 
 type s struct {

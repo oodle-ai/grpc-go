@@ -25,12 +25,12 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/attributes"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal/balancer/stub"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/resolver/manual"
+	"github.com/oodle-ai/grpc-go/attributes"
+	"github.com/oodle-ai/grpc-go/balancer"
+	"github.com/oodle-ai/grpc-go/credentials/insecure"
+	"github.com/oodle-ai/grpc-go/internal/balancer/stub"
+	"github.com/oodle-ai/grpc-go/resolver"
+	"github.com/oodle-ai/grpc-go/resolver/manual"
 )
 
 type wrapResolverBuilder struct {

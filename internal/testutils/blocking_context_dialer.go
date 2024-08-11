@@ -23,7 +23,7 @@ import (
 	"net"
 	"sync"
 
-	"google.golang.org/grpc/grpclog"
+	"github.com/oodle-ai/grpc-go/grpclog"
 )
 
 var logger = grpclog.Component("testutils")

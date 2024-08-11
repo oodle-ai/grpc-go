@@ -26,11 +26,11 @@ import (
 	"os/user"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials/insecure"
-	pb "google.golang.org/grpc/examples/helloworld/helloworld"
-	"google.golang.org/grpc/status"
+	"github.com/oodle-ai/grpc-go"
+	"github.com/oodle-ai/grpc-go/codes"
+	"github.com/oodle-ai/grpc-go/credentials/insecure"
+	pb "github.com/oodle-ai/grpc-go/examples/helloworld/helloworld"
+	"github.com/oodle-ai/grpc-go/status"
 )
 
 var addr = flag.String("addr", "localhost:50052", "the address to connect to")

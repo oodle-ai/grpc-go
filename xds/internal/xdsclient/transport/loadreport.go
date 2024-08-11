@@ -24,11 +24,11 @@ import (
 	"io"
 	"time"
 
-	"google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/internal/pretty"
-	"google.golang.org/grpc/xds/internal"
-	"google.golang.org/grpc/xds/internal/xdsclient/load"
+	"github.com/oodle-ai/grpc-go/internal/backoff"
+	"github.com/oodle-ai/grpc-go/internal/grpcsync"
+	"github.com/oodle-ai/grpc-go/internal/pretty"
+	"github.com/oodle-ai/grpc-go/xds/internal"
+	"github.com/oodle-ai/grpc-go/xds/internal/xdsclient/load"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/durationpb"
 

@@ -26,12 +26,12 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal/envconfig"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/xds/bootstrap"
-	"google.golang.org/grpc/resolver"
+	"github.com/oodle-ai/grpc-go"
+	"github.com/oodle-ai/grpc-go/credentials/insecure"
+	"github.com/oodle-ai/grpc-go/internal/envconfig"
+	"github.com/oodle-ai/grpc-go/internal/grpctest"
+	"github.com/oodle-ai/grpc-go/internal/xds/bootstrap"
+	"github.com/oodle-ai/grpc-go/resolver"
 )
 
 type s struct {

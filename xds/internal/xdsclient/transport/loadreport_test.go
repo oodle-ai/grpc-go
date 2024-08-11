@@ -26,9 +26,9 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"github.com/google/uuid"
-	"google.golang.org/grpc/internal/testutils/xds/fakeserver"
-	"google.golang.org/grpc/internal/xds/bootstrap"
-	"google.golang.org/grpc/xds/internal/xdsclient/transport"
+	"github.com/oodle-ai/grpc-go/internal/testutils/xds/fakeserver"
+	"github.com/oodle-ai/grpc-go/internal/xds/bootstrap"
+	"github.com/oodle-ai/grpc-go/xds/internal/xdsclient/transport"
 	"google.golang.org/protobuf/testing/protocmp"
 	"google.golang.org/protobuf/types/known/durationpb"
 

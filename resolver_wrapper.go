@@ -23,11 +23,11 @@ import (
 	"strings"
 	"sync"
 
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/internal/pretty"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
+	"github.com/oodle-ai/grpc-go/internal/channelz"
+	"github.com/oodle-ai/grpc-go/internal/grpcsync"
+	"github.com/oodle-ai/grpc-go/internal/pretty"
+	"github.com/oodle-ai/grpc-go/resolver"
+	"github.com/oodle-ai/grpc-go/serviceconfig"
 )
 
 // ccResolverWrapper is a wrapper on top of cc for resolvers.

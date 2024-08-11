@@ -24,8 +24,8 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/resolver"
+	"github.com/oodle-ai/grpc-go/balancer"
+	"github.com/oodle-ai/grpc-go/resolver"
 )
 
 type mockSubConn struct {

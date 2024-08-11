@@ -24,13 +24,13 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/balancer/gracefulswitch"
-	"google.golang.org/grpc/internal/cache"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
+	"github.com/oodle-ai/grpc-go/balancer"
+	"github.com/oodle-ai/grpc-go/connectivity"
+	"github.com/oodle-ai/grpc-go/internal/balancer/gracefulswitch"
+	"github.com/oodle-ai/grpc-go/internal/cache"
+	"github.com/oodle-ai/grpc-go/internal/grpclog"
+	"github.com/oodle-ai/grpc-go/resolver"
+	"github.com/oodle-ai/grpc-go/serviceconfig"
 )
 
 // subBalancerWrapper is used to keep the configurations that will be used to start

@@ -43,7 +43,7 @@ if [[ -n "${DIFF}" ]]; then
     echo -e "ERROR: Generated file differs from golden file:\n${DIFF}"
     echo -e "If you have made recent changes to protoc-gen-go-grpc," \
      "please regenerate the golden files by running:" \
-     "\n\t go generate google.golang.org/grpc/..." >&2
+     "\n\t go generate github.com/oodle-ai/grpc-go/..." >&2
     exit 1
 fi
 

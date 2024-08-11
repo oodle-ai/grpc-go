@@ -25,18 +25,18 @@ import (
 	"io"
 	"sort"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/status"
+	"github.com/oodle-ai/grpc-go"
+	"github.com/oodle-ai/grpc-go/codes"
+	"github.com/oodle-ai/grpc-go/status"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protodesc"
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"google.golang.org/protobuf/reflect/protoregistry"
 
-	v1reflectiongrpc "google.golang.org/grpc/reflection/grpc_reflection_v1"
-	v1reflectionpb "google.golang.org/grpc/reflection/grpc_reflection_v1"
-	v1alphareflectiongrpc "google.golang.org/grpc/reflection/grpc_reflection_v1alpha"
-	v1alphareflectionpb "google.golang.org/grpc/reflection/grpc_reflection_v1alpha"
+	v1reflectiongrpc "github.com/oodle-ai/grpc-go/reflection/grpc_reflection_v1"
+	v1reflectionpb "github.com/oodle-ai/grpc-go/reflection/grpc_reflection_v1"
+	v1alphareflectiongrpc "github.com/oodle-ai/grpc-go/reflection/grpc_reflection_v1alpha"
+	v1alphareflectionpb "github.com/oodle-ai/grpc-go/reflection/grpc_reflection_v1alpha"
 )
 
 // ServiceInfoProvider is an interface used to retrieve metadata about the

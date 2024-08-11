@@ -26,19 +26,19 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal/backoff"
-	imetadata "google.golang.org/grpc/internal/metadata"
-	"google.golang.org/grpc/keepalive"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/resolver"
+	"github.com/oodle-ai/grpc-go"
+	"github.com/oodle-ai/grpc-go/balancer"
+	"github.com/oodle-ai/grpc-go/connectivity"
+	"github.com/oodle-ai/grpc-go/credentials/insecure"
+	"github.com/oodle-ai/grpc-go/internal/backoff"
+	imetadata "github.com/oodle-ai/grpc-go/internal/metadata"
+	"github.com/oodle-ai/grpc-go/keepalive"
+	"github.com/oodle-ai/grpc-go/metadata"
+	"github.com/oodle-ai/grpc-go/resolver"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	lbpb "google.golang.org/grpc/balancer/grpclb/grpc_lb_v1"
+	lbpb "github.com/oodle-ai/grpc-go/balancer/grpclb/grpc_lb_v1"
 )
 
 func serverListEqual(a, b []*lbpb.Server) bool {

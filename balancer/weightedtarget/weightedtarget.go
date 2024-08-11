@@ -26,15 +26,15 @@ import (
 	"fmt"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/weightedtarget/weightedaggregator"
-	"google.golang.org/grpc/internal/balancergroup"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/internal/hierarchy"
-	"google.golang.org/grpc/internal/pretty"
-	"google.golang.org/grpc/internal/wrr"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
+	"github.com/oodle-ai/grpc-go/balancer"
+	"github.com/oodle-ai/grpc-go/balancer/weightedtarget/weightedaggregator"
+	"github.com/oodle-ai/grpc-go/internal/balancergroup"
+	"github.com/oodle-ai/grpc-go/internal/grpclog"
+	"github.com/oodle-ai/grpc-go/internal/hierarchy"
+	"github.com/oodle-ai/grpc-go/internal/pretty"
+	"github.com/oodle-ai/grpc-go/internal/wrr"
+	"github.com/oodle-ai/grpc-go/resolver"
+	"github.com/oodle-ai/grpc-go/serviceconfig"
 )
 
 // Name is the name of the weighted_target balancer.

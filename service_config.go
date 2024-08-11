@@ -25,13 +25,13 @@ import (
 	"reflect"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/pickfirst"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/balancer/gracefulswitch"
-	internalserviceconfig "google.golang.org/grpc/internal/serviceconfig"
-	"google.golang.org/grpc/serviceconfig"
+	"github.com/oodle-ai/grpc-go/balancer"
+	"github.com/oodle-ai/grpc-go/balancer/pickfirst"
+	"github.com/oodle-ai/grpc-go/codes"
+	"github.com/oodle-ai/grpc-go/internal"
+	"github.com/oodle-ai/grpc-go/internal/balancer/gracefulswitch"
+	internalserviceconfig "github.com/oodle-ai/grpc-go/internal/serviceconfig"
+	"github.com/oodle-ai/grpc-go/serviceconfig"
 )
 
 const maxInt = int(^uint(0) >> 1)

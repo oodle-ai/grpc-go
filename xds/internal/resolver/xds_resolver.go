@@ -25,17 +25,17 @@ import (
 	"math/rand"
 	"sync/atomic"
 
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/internal/pretty"
-	iresolver "google.golang.org/grpc/internal/resolver"
-	"google.golang.org/grpc/internal/wrr"
-	"google.golang.org/grpc/internal/xds/bootstrap"
-	"google.golang.org/grpc/resolver"
-	rinternal "google.golang.org/grpc/xds/internal/resolver/internal"
-	"google.golang.org/grpc/xds/internal/xdsclient"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource"
+	"github.com/oodle-ai/grpc-go/internal"
+	"github.com/oodle-ai/grpc-go/internal/grpclog"
+	"github.com/oodle-ai/grpc-go/internal/grpcsync"
+	"github.com/oodle-ai/grpc-go/internal/pretty"
+	iresolver "github.com/oodle-ai/grpc-go/internal/resolver"
+	"github.com/oodle-ai/grpc-go/internal/wrr"
+	"github.com/oodle-ai/grpc-go/internal/xds/bootstrap"
+	"github.com/oodle-ai/grpc-go/resolver"
+	rinternal "github.com/oodle-ai/grpc-go/xds/internal/resolver/internal"
+	"github.com/oodle-ai/grpc-go/xds/internal/xdsclient"
+	"github.com/oodle-ai/grpc-go/xds/internal/xdsclient/xdsresource"
 )
 
 // Scheme is the xDS resolver's scheme.

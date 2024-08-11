@@ -25,19 +25,19 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/internal/testutils/xds/e2e"
-	"google.golang.org/grpc/xds/internal"
+	"github.com/oodle-ai/grpc-go/internal/grpcsync"
+	"github.com/oodle-ai/grpc-go/internal/testutils/xds/e2e"
+	"github.com/oodle-ai/grpc-go/xds/internal"
 
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/internal/xds/bootstrap"
-	xdstestutils "google.golang.org/grpc/xds/internal/testutils"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource/version"
+	"github.com/oodle-ai/grpc-go/internal/testutils"
+	"github.com/oodle-ai/grpc-go/internal/xds/bootstrap"
+	xdstestutils "github.com/oodle-ai/grpc-go/xds/internal/testutils"
+	"github.com/oodle-ai/grpc-go/xds/internal/xdsclient/xdsresource"
+	"github.com/oodle-ai/grpc-go/xds/internal/xdsclient/xdsresource/version"
 
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
 	v3listenerpb "github.com/envoyproxy/go-control-plane/envoy/config/listener/v3"
-	_ "google.golang.org/grpc/xds/internal/httpfilter/router" // Register the router filter.
+	_ "github.com/oodle-ai/grpc-go/xds/internal/httpfilter/router" // Register the router filter.
 )
 
 var emptyServerOpts = e2e.ManagementServerOptions{}

@@ -1,11 +1,11 @@
-module google.golang.org/grpc/security/advancedtls/examples
+module github.com/oodle-ai/grpc-go/security/advancedtls/examples
 
 go 1.21
 
 require (
-	google.golang.org/grpc v1.64.0
-	google.golang.org/grpc/examples v0.0.0-20240606220939-dfcabe08c639
-	google.golang.org/grpc/security/advancedtls v0.0.0-20240606220939-dfcabe08c639
+	github.com/oodle-ai/grpc-go v1.64.0
+	github.com/oodle-ai/grpc-go/examples v0.0.0-20240606220939-dfcabe08c639
+	github.com/oodle-ai/grpc-go/security/advancedtls v0.0.0-20240606220939-dfcabe08c639
 )
 
 require (
@@ -17,8 +17,8 @@ require (
 	google.golang.org/protobuf v1.34.1 // indirect
 )
 
-replace google.golang.org/grpc => ../../..
+replace github.com/oodle-ai/grpc-go => ../../..
 
-replace google.golang.org/grpc/examples => ../../../examples
+replace github.com/oodle-ai/grpc-go/examples => ../../../examples
 
-replace google.golang.org/grpc/security/advancedtls => ../
+replace github.com/oodle-ai/grpc-go/security/advancedtls => ../

@@ -26,9 +26,9 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	estats "google.golang.org/grpc/experimental/stats"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/stats"
+	estats "github.com/oodle-ai/grpc-go/experimental/stats"
+	"github.com/oodle-ai/grpc-go/internal/testutils"
+	"github.com/oodle-ai/grpc-go/stats"
 )
 
 // TestMetricsRecorder is a MetricsRecorder to be used in tests. It sends

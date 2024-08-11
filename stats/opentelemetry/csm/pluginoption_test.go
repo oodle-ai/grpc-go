@@ -27,11 +27,11 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/internal/envconfig"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/internal/testutils/xds/e2e"
-	"google.golang.org/grpc/metadata"
+	"github.com/oodle-ai/grpc-go/internal/envconfig"
+	"github.com/oodle-ai/grpc-go/internal/grpctest"
+	"github.com/oodle-ai/grpc-go/internal/testutils"
+	"github.com/oodle-ai/grpc-go/internal/testutils/xds/e2e"
+	"github.com/oodle-ai/grpc-go/metadata"
 
 	"github.com/google/go-cmp/cmp"
 	"go.opentelemetry.io/otel/attribute"

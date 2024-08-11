@@ -28,13 +28,13 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc"
-	lbgrpc "google.golang.org/grpc/balancer/grpclb/grpc_lb_v1"
-	lbpb "google.golang.org/grpc/balancer/grpclb/grpc_lb_v1"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/pretty"
-	"google.golang.org/grpc/status"
+	"github.com/oodle-ai/grpc-go"
+	lbgrpc "github.com/oodle-ai/grpc-go/balancer/grpclb/grpc_lb_v1"
+	lbpb "github.com/oodle-ai/grpc-go/balancer/grpclb/grpc_lb_v1"
+	"github.com/oodle-ai/grpc-go/codes"
+	"github.com/oodle-ai/grpc-go/grpclog"
+	"github.com/oodle-ai/grpc-go/internal/pretty"
+	"github.com/oodle-ai/grpc-go/status"
 )
 
 var logger = grpclog.Component("fake_grpclb")

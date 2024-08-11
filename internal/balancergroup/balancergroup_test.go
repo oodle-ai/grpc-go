@@ -23,17 +23,17 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/pickfirst"
-	"google.golang.org/grpc/balancer/roundrobin"
-	"google.golang.org/grpc/balancer/weightedtarget/weightedaggregator"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal/balancer/stub"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/resolver"
+	"github.com/oodle-ai/grpc-go/balancer"
+	"github.com/oodle-ai/grpc-go/balancer/pickfirst"
+	"github.com/oodle-ai/grpc-go/balancer/roundrobin"
+	"github.com/oodle-ai/grpc-go/balancer/weightedtarget/weightedaggregator"
+	"github.com/oodle-ai/grpc-go/connectivity"
+	"github.com/oodle-ai/grpc-go/credentials/insecure"
+	"github.com/oodle-ai/grpc-go/internal/balancer/stub"
+	"github.com/oodle-ai/grpc-go/internal/channelz"
+	"github.com/oodle-ai/grpc-go/internal/grpctest"
+	"github.com/oodle-ai/grpc-go/internal/testutils"
+	"github.com/oodle-ai/grpc-go/resolver"
 )
 
 const (

@@ -25,9 +25,9 @@ package test_test
 import (
 	"testing"
 
-	"google.golang.org/grpc/admin/test"
-	"google.golang.org/grpc/codes"
-	_ "google.golang.org/grpc/xds"
+	"github.com/oodle-ai/grpc-go/admin/test"
+	"github.com/oodle-ai/grpc-go/codes"
+	_ "github.com/oodle-ai/grpc-go/xds"
 )
 
 func TestRegisterWithCSDS(t *testing.T) {

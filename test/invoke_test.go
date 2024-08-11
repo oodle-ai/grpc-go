@@ -24,11 +24,11 @@ import (
 	"strings"
 	"testing"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal/stubserver"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
-	"google.golang.org/grpc/status"
+	"github.com/oodle-ai/grpc-go"
+	"github.com/oodle-ai/grpc-go/codes"
+	"github.com/oodle-ai/grpc-go/internal/stubserver"
+	testpb "github.com/oodle-ai/grpc-go/interop/grpc_testing"
+	"github.com/oodle-ai/grpc-go/status"
 )
 
 // TestInvoke verifies a straightforward invocation of ClientConn.Invoke().

@@ -32,13 +32,13 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
+	"github.com/oodle-ai/grpc-go/internal/channelz"
+	"github.com/oodle-ai/grpc-go/internal/testutils"
 	"golang.org/x/sys/unix"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/testutils"
 	"google.golang.org/protobuf/testing/protocmp"
 	"google.golang.org/protobuf/types/known/durationpb"
 
-	channelzpb "google.golang.org/grpc/channelz/grpc_channelz_v1"
+	channelzpb "github.com/oodle-ai/grpc-go/channelz/grpc_channelz_v1"
 )
 
 func (s) TestGetSocketOptions(t *testing.T) {

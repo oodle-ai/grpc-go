@@ -25,10 +25,10 @@ import (
 	"time"
 
 	v3orcapb "github.com/cncf/xds/go/xds/data/orca/v3"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/base"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/orca"
+	"github.com/oodle-ai/grpc-go/balancer"
+	"github.com/oodle-ai/grpc-go/balancer/base"
+	"github.com/oodle-ai/grpc-go/connectivity"
+	"github.com/oodle-ai/grpc-go/orca"
 )
 
 func init() {

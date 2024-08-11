@@ -27,10 +27,10 @@ import (
 	"net"
 	"time"
 
-	"google.golang.org/grpc"
+	"github.com/oodle-ai/grpc-go"
 
-	pb "google.golang.org/grpc/examples/features/proto/echo"
-	"google.golang.org/grpc/internal/grpcsync"
+	pb "github.com/oodle-ai/grpc-go/examples/features/proto/echo"
+	"github.com/oodle-ai/grpc-go/internal/grpcsync"
 )
 
 var port = flag.Int("port", 50052, "port number")

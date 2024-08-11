@@ -26,10 +26,10 @@ import (
 	"net"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/channelz/service"
+	"github.com/oodle-ai/grpc-go"
+	"github.com/oodle-ai/grpc-go/channelz/service"
 
-	pb "google.golang.org/grpc/examples/helloworld/helloworld"
+	pb "github.com/oodle-ai/grpc-go/examples/helloworld/helloworld"
 )
 
 var (

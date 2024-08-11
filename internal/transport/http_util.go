@@ -34,9 +34,9 @@ import (
 	"time"
 	"unicode/utf8"
 
+	"github.com/oodle-ai/grpc-go/codes"
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/hpack"
-	"google.golang.org/grpc/codes"
 )
 
 const (

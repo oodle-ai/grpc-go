@@ -24,7 +24,7 @@ import (
 	"fmt"
 	"os"
 
-	"google.golang.org/grpc/security/advancedtls/testdata"
+	"github.com/oodle-ai/grpc-go/security/advancedtls/testdata"
 )
 
 // CertStore contains all the certificates used in the integration tests.

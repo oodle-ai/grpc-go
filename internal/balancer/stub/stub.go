@@ -23,8 +23,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/serviceconfig"
+	"github.com/oodle-ai/grpc-go/balancer"
+	"github.com/oodle-ai/grpc-go/serviceconfig"
 )
 
 // BalancerFuncs contains all balancer.Balancer functions with a preceding

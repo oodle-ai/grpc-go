@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"unsafe"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/internal/buffer"
-	"google.golang.org/grpc/resolver"
+	"github.com/oodle-ai/grpc-go/balancer"
+	"github.com/oodle-ai/grpc-go/internal/buffer"
+	"github.com/oodle-ai/grpc-go/resolver"
 )
 
 // subConnWrapper wraps every created SubConn in the Outlier Detection Balancer,

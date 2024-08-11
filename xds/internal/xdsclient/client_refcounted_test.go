@@ -24,8 +24,8 @@ import (
 	"testing"
 
 	"github.com/google/uuid"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/internal/testutils/xds/e2e"
+	"github.com/oodle-ai/grpc-go/internal/testutils"
+	"github.com/oodle-ai/grpc-go/internal/testutils/xds/e2e"
 )
 
 // Tests that multiple calls to New() with the same name returns the same

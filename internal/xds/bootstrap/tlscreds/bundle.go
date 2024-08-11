@@ -28,10 +28,10 @@ import (
 	"fmt"
 	"net"
 
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/tls/certprovider"
-	"google.golang.org/grpc/credentials/tls/certprovider/pemfile"
-	"google.golang.org/grpc/internal/grpcsync"
+	"github.com/oodle-ai/grpc-go/credentials"
+	"github.com/oodle-ai/grpc-go/credentials/tls/certprovider"
+	"github.com/oodle-ai/grpc-go/credentials/tls/certprovider/pemfile"
+	"github.com/oodle-ai/grpc-go/internal/grpcsync"
 )
 
 // bundle is an implementation of credentials.Bundle which implements mTLS

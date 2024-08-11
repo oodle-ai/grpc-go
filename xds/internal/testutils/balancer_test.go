@@ -21,8 +21,8 @@ package testutils
 import (
 	"testing"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/internal/testutils"
+	"github.com/oodle-ai/grpc-go/balancer"
+	"github.com/oodle-ai/grpc-go/internal/testutils"
 )
 
 func TestIsRoundRobin(t *testing.T) {

@@ -32,16 +32,16 @@ import (
 	"time"
 	"unsafe"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/balancer/gracefulswitch"
-	"google.golang.org/grpc/internal/buffer"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/internal/grpcsync"
-	iserviceconfig "google.golang.org/grpc/internal/serviceconfig"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
+	"github.com/oodle-ai/grpc-go/balancer"
+	"github.com/oodle-ai/grpc-go/connectivity"
+	"github.com/oodle-ai/grpc-go/internal/balancer/gracefulswitch"
+	"github.com/oodle-ai/grpc-go/internal/buffer"
+	"github.com/oodle-ai/grpc-go/internal/channelz"
+	"github.com/oodle-ai/grpc-go/internal/grpclog"
+	"github.com/oodle-ai/grpc-go/internal/grpcsync"
+	iserviceconfig "github.com/oodle-ai/grpc-go/internal/serviceconfig"
+	"github.com/oodle-ai/grpc-go/resolver"
+	"github.com/oodle-ai/grpc-go/serviceconfig"
 )
 
 // Globals to stub out in tests.

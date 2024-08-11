@@ -26,9 +26,9 @@ import (
 	"net"
 	"sync"
 
-	"google.golang.org/grpc"
+	"github.com/oodle-ai/grpc-go"
 
-	pb "google.golang.org/grpc/examples/features/proto/echo"
+	pb "github.com/oodle-ai/grpc-go/examples/features/proto/echo"
 )
 
 var (

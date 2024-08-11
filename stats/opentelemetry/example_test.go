@@ -17,10 +17,10 @@
 package opentelemetry_test
 
 import (
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
-	estats "google.golang.org/grpc/experimental/stats"
-	"google.golang.org/grpc/stats/opentelemetry"
+	"github.com/oodle-ai/grpc-go"
+	"github.com/oodle-ai/grpc-go/credentials/insecure"
+	estats "github.com/oodle-ai/grpc-go/experimental/stats"
+	"github.com/oodle-ai/grpc-go/stats/opentelemetry"
 
 	"go.opentelemetry.io/otel/sdk/metric"
 )

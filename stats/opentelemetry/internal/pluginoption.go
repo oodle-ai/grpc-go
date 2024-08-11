@@ -18,7 +18,7 @@
 package internal
 
 import (
-	"google.golang.org/grpc/metadata"
+	"github.com/oodle-ai/grpc-go/metadata"
 )
 
 // SetPluginOption sets the plugin option on Options.

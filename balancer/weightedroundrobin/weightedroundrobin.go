@@ -30,7 +30,7 @@ package weightedroundrobin
 import (
 	"fmt"
 
-	"google.golang.org/grpc/resolver"
+	"github.com/oodle-ai/grpc-go/resolver"
 )
 
 // attributeKey is the type used as the key to store AddrInfo in the

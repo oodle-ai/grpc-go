@@ -26,13 +26,13 @@ import (
 	"reflect"
 	"testing"
 
-	"google.golang.org/grpc/codes"
-	protoenc "google.golang.org/grpc/encoding/proto"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/internal/transport"
-	"google.golang.org/grpc/mem"
-	"google.golang.org/grpc/status"
-	perfpb "google.golang.org/grpc/test/codec_perf"
+	"github.com/oodle-ai/grpc-go/codes"
+	protoenc "github.com/oodle-ai/grpc-go/encoding/proto"
+	"github.com/oodle-ai/grpc-go/internal/testutils"
+	"github.com/oodle-ai/grpc-go/internal/transport"
+	"github.com/oodle-ai/grpc-go/mem"
+	"github.com/oodle-ai/grpc-go/status"
+	perfpb "github.com/oodle-ai/grpc-go/test/codec_perf"
 	"google.golang.org/protobuf/proto"
 )
 

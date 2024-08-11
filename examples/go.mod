@@ -1,4 +1,4 @@
-module google.golang.org/grpc/examples
+module github.com/oodle-ai/grpc-go/examples
 
 go 1.21
 
@@ -9,9 +9,9 @@ require (
 	go.opentelemetry.io/otel/sdk/metric v1.27.0
 	golang.org/x/oauth2 v0.21.0
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20240604185151-ef581f913117
-	google.golang.org/grpc v1.64.0
-	google.golang.org/grpc/gcp/observability v1.0.1
-	google.golang.org/grpc/stats/opentelemetry v0.0.0-20240604165302-6d236200ea68
+	github.com/oodle-ai/grpc-go v1.64.0
+	github.com/oodle-ai/grpc-go/gcp/observability v1.0.1
+	github.com/oodle-ai/grpc-go/stats/opentelemetry v0.0.0-20240604165302-6d236200ea68
 	google.golang.org/protobuf v1.34.1
 )
 
@@ -60,7 +60,7 @@ require (
 	github.com/prometheus/procfs v0.15.0 // indirect
 	go.opencensus.io v0.24.0 // indirect
 	go.opentelemetry.io/contrib/detectors/gcp v1.27.0 // indirect
-	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.52.0 // indirect
+	go.opentelemetry.io/contrib/instrumentation/github.com/oodle-ai/grpc-go/otelgrpc v0.52.0 // indirect
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.52.0 // indirect
 	go.opentelemetry.io/otel v1.27.0 // indirect
 	go.opentelemetry.io/otel/metric v1.27.0 // indirect
@@ -75,9 +75,9 @@ require (
 	google.golang.org/api v0.183.0 // indirect
 	google.golang.org/genproto v0.0.0-20240604185151-ef581f913117 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20240604185151-ef581f913117 // indirect
-	google.golang.org/grpc/stats/opencensus v1.0.0 // indirect
+	github.com/oodle-ai/grpc-go/stats/opencensus v1.0.0 // indirect
 )
 
-replace google.golang.org/grpc => ../
+replace github.com/oodle-ai/grpc-go => ../
 
-replace google.golang.org/grpc/stats/opentelemetry => ../stats/opentelemetry
+replace github.com/oodle-ai/grpc-go/stats/opentelemetry => ../stats/opentelemetry

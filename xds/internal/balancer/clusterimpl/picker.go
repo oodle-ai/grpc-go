@@ -22,13 +22,13 @@ import (
 	"context"
 
 	v3orcapb "github.com/cncf/xds/go/xds/data/orca/v3"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/stats"
-	"google.golang.org/grpc/internal/wrr"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/xds/internal/xdsclient"
+	"github.com/oodle-ai/grpc-go/balancer"
+	"github.com/oodle-ai/grpc-go/codes"
+	"github.com/oodle-ai/grpc-go/connectivity"
+	"github.com/oodle-ai/grpc-go/internal/stats"
+	"github.com/oodle-ai/grpc-go/internal/wrr"
+	"github.com/oodle-ai/grpc-go/status"
+	"github.com/oodle-ai/grpc-go/xds/internal/xdsclient"
 )
 
 // NewRandomWRR is used when calculating drops. It's exported so that tests can

@@ -21,7 +21,7 @@ package codes
 import (
 	"strconv"
 
-	"google.golang.org/grpc/internal"
+	"github.com/oodle-ai/grpc-go/internal"
 )
 
 func init() {

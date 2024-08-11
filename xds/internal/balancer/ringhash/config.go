@@ -22,8 +22,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"google.golang.org/grpc/internal/envconfig"
-	"google.golang.org/grpc/serviceconfig"
+	"github.com/oodle-ai/grpc-go/internal/envconfig"
+	"github.com/oodle-ai/grpc-go/serviceconfig"
 )
 
 // LBConfig is the balancer config for ring_hash balancer.

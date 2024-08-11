@@ -16,29 +16,20 @@
  *
  */
 
-// Package leakcheck contains functions to check leaked goroutines and buffers.
+// Package leakcheck contains functions to check leaked goroutines.
 //
-// Call the following at the beginning of test:
-//
-//	defer leakcheck.NewLeakChecker(t).Check()
+// Call "defer leakcheck.Check(t)" at the beginning of tests.
 package leakcheck
 
 import (
 	"runtime"
-	"runtime/debug"
-	"slices"
 	"sort"
-	"strconv"
 	"strings"
-	"sync"
-	"sync/atomic"
 	"time"
-	"unsafe"
-
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/mem"
 )
 
+<<<<<<< HEAD
+=======
 // failTestsOnLeakedBuffers is a special flag that will cause tests to fail if
 // leaked buffers are detected, instead of simply logging them as an
 // informational failure. This can be enabled with the "checkbuffers" compile
@@ -187,6 +178,7 @@ func (p *trackingBufferPool) Put(buf *[]byte) {
 	p.pool.Put(buf)
 }
 
+>>>>>>> 35f35e4d (Enable test failures with tag)
 var goroutinesToIgnore = []string{
 	"testing.Main(",
 	"testing.tRunner(",
@@ -253,17 +245,13 @@ func interestingGoroutines() (gs []string) {
 	return
 }
 
-// Errorfer is the interface that wraps the Logf and Errorf method. It's a subset
-// of testing.TB to make it easy to use this package.
+// Errorfer is the interface that wraps the Errorf method. It's a subset of
+// testing.TB to make it easy to use Check.
 type Errorfer interface {
-	Logf(format string, args ...any)
 	Errorf(format string, args ...any)
 }
 
-// CheckGoroutines looks at the currently-running goroutines and checks if there
-// are any interesting (created by gRPC) goroutines leaked. It waits up to 10
-// seconds in the error cases.
-func CheckGoroutines(efer Errorfer, timeout time.Duration) {
+func check(efer Errorfer, timeout time.Duration) {
 	// Loop, waiting for goroutines to shut down.
 	// Wait up to timeout, but finish as quickly as possible.
 	deadline := time.Now().Add(timeout)
@@ -279,28 +267,9 @@ func CheckGoroutines(efer Errorfer, timeout time.Duration) {
 	}
 }
 
-// LeakChecker captures an Errorfer and is returned by NewLeakChecker as a
-// convenient method to set up leak check tests in a unit test.
-type LeakChecker struct {
-	efer Errorfer
-}
-
-// Check executes the leak check tests, failing the unit test if any buffer or
-// goroutine leaks are detected.
-func (lc *LeakChecker) Check() {
-	CheckTrackingBufferPool()
-	CheckGoroutines(lc.efer, 10*time.Second)
-}
-
-// NewLeakChecker offers a convenient way to set up the leak checks for a
-// specific unit test. It can be used as follows, at the beginning of tests:
-//
-//	defer leakcheck.NewLeakChecker(t).Check()
-//
-// It initially invokes SetTrackingBufferPool to set up buffer tracking, then the
-// deferred LeakChecker.Check call will invoke CheckTrackingBufferPool and
-// CheckGoroutines with a default timeout of 10 seconds.
-func NewLeakChecker(efer Errorfer) *LeakChecker {
-	SetTrackingBufferPool(efer)
-	return &LeakChecker{efer: efer}
+// Check looks at the currently-running goroutines and checks if there are any
+// interesting (created by gRPC) goroutines leaked. It waits up to 10 seconds
+// in the error cases.
+func Check(efer Errorfer) {
+	check(efer, 10*time.Second)
 }

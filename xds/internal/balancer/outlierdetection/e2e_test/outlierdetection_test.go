@@ -27,20 +27,20 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/stubserver"
-	"google.golang.org/grpc/peer"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/resolver/manual"
-	"google.golang.org/grpc/serviceconfig"
+	"github.com/oodle-ai/grpc-go"
+	"github.com/oodle-ai/grpc-go/credentials/insecure"
+	"github.com/oodle-ai/grpc-go/internal"
+	"github.com/oodle-ai/grpc-go/internal/grpctest"
+	"github.com/oodle-ai/grpc-go/internal/stubserver"
+	"github.com/oodle-ai/grpc-go/peer"
+	"github.com/oodle-ai/grpc-go/resolver"
+	"github.com/oodle-ai/grpc-go/resolver/manual"
+	"github.com/oodle-ai/grpc-go/serviceconfig"
 
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
+	testgrpc "github.com/oodle-ai/grpc-go/interop/grpc_testing"
+	testpb "github.com/oodle-ai/grpc-go/interop/grpc_testing"
 
-	_ "google.golang.org/grpc/xds/internal/balancer/outlierdetection" // To register helper functions which register/unregister Outlier Detection LB Policy.
+	_ "github.com/oodle-ai/grpc-go/xds/internal/balancer/outlierdetection" // To register helper functions which register/unregister Outlier Detection LB Policy.
 )
 
 var defaultTestTimeout = 5 * time.Second

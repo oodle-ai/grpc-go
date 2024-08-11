@@ -22,8 +22,8 @@ import (
 	"maps"
 	"testing"
 
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal"
+	"github.com/oodle-ai/grpc-go/grpclog"
+	"github.com/oodle-ai/grpc-go/internal"
 )
 
 func init() {

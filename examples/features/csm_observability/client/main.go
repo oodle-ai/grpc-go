@@ -26,12 +26,12 @@ import (
 	"net/http"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/examples/features/proto/echo"
-	"google.golang.org/grpc/stats/opentelemetry"
-	"google.golang.org/grpc/stats/opentelemetry/csm"
-	_ "google.golang.org/grpc/xds" // To install the xds resolvers and balancers.
+	"github.com/oodle-ai/grpc-go"
+	"github.com/oodle-ai/grpc-go/credentials/insecure"
+	"github.com/oodle-ai/grpc-go/examples/features/proto/echo"
+	"github.com/oodle-ai/grpc-go/stats/opentelemetry"
+	"github.com/oodle-ai/grpc-go/stats/opentelemetry/csm"
+	_ "github.com/oodle-ai/grpc-go/xds" // To install the xds resolvers and balancers.
 
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"go.opentelemetry.io/otel/exporters/prometheus"

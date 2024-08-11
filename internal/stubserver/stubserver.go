@@ -17,7 +17,7 @@
  */
 
 // Package stubserver is a stubbable implementation of
-// google.golang.org/grpc/interop/grpc_testing for testing purposes.
+// github.com/oodle-ai/grpc-go/interop/grpc_testing for testing purposes.
 package stubserver
 
 import (
@@ -27,16 +27,16 @@ import (
 	"testing"
 	"time"
 
+	"github.com/oodle-ai/grpc-go"
+	"github.com/oodle-ai/grpc-go/connectivity"
+	"github.com/oodle-ai/grpc-go/credentials/insecure"
+	"github.com/oodle-ai/grpc-go/resolver"
+	"github.com/oodle-ai/grpc-go/resolver/manual"
+	"github.com/oodle-ai/grpc-go/serviceconfig"
 	"golang.org/x/net/http2"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/resolver/manual"
-	"google.golang.org/grpc/serviceconfig"
 
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
+	testgrpc "github.com/oodle-ai/grpc-go/interop/grpc_testing"
+	testpb "github.com/oodle-ai/grpc-go/interop/grpc_testing"
 )
 
 // StubServer is a server that is easy to customize within individual test

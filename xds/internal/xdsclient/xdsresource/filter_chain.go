@@ -23,9 +23,9 @@ import (
 	"net"
 	"sync/atomic"
 
-	"google.golang.org/grpc/internal/resolver"
-	"google.golang.org/grpc/xds/internal/httpfilter"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource/version"
+	"github.com/oodle-ai/grpc-go/internal/resolver"
+	"github.com/oodle-ai/grpc-go/xds/internal/httpfilter"
+	"github.com/oodle-ai/grpc-go/xds/internal/xdsclient/xdsresource/version"
 	"google.golang.org/protobuf/proto"
 
 	v3listenerpb "github.com/envoyproxy/go-control-plane/envoy/config/listener/v3"

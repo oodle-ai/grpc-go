@@ -24,12 +24,12 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	_ "google.golang.org/grpc" // to register pick_first
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/endpointsharding"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/serviceconfig"
+	_ "github.com/oodle-ai/grpc-go" // to register pick_first
+	"github.com/oodle-ai/grpc-go/balancer"
+	"github.com/oodle-ai/grpc-go/balancer/endpointsharding"
+	"github.com/oodle-ai/grpc-go/connectivity"
+	"github.com/oodle-ai/grpc-go/grpclog"
+	"github.com/oodle-ai/grpc-go/serviceconfig"
 )
 
 var gracefulSwitchPickFirst serviceconfig.LoadBalancingConfig

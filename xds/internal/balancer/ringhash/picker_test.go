@@ -25,11 +25,11 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/grpclog"
-	igrpclog "google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/internal/testutils"
+	"github.com/oodle-ai/grpc-go/balancer"
+	"github.com/oodle-ai/grpc-go/connectivity"
+	"github.com/oodle-ai/grpc-go/grpclog"
+	igrpclog "github.com/oodle-ai/grpc-go/internal/grpclog"
+	"github.com/oodle-ai/grpc-go/internal/testutils"
 )
 
 var testSubConns []*testutils.TestSubConn

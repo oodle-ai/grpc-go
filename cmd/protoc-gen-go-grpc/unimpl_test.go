@@ -21,8 +21,8 @@ package main_test
 import (
 	"testing"
 
-	"google.golang.org/grpc"
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
+	"github.com/oodle-ai/grpc-go"
+	testgrpc "github.com/oodle-ai/grpc-go/interop/grpc_testing"
 )
 
 type unimplEmbeddedByPointer struct {

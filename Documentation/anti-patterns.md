@@ -2,12 +2,12 @@
 
 ### How to properly create a `ClientConn`: `grpc.NewClient`
 
-[`grpc.NewClient`](https://pkg.go.dev/google.golang.org/grpc#NewClient) is the
+[`grpc.NewClient`](https://pkg.go.dev/github.com/oodle-ai/grpc-go#NewClient) is the
 function in the gRPC library that creates a virtual connection from a client
 application to a gRPC server.  It takes a target URI (which represents the name
 of a logical backend service and resolves to one or more physical addresses) and
 a list of options, and returns a
-[`ClientConn`](https://pkg.go.dev/google.golang.org/grpc#ClientConn) object that
+[`ClientConn`](https://pkg.go.dev/github.com/oodle-ai/grpc-go#ClientConn) object that
 represents the virtual connection to the server.  The `ClientConn` contains one
 or more actual connections to real servers and attempts to maintain these
 connections by automatically reconnecting to them when they break.  `NewClient`
@@ -15,7 +15,7 @@ was introduced in gRPC-Go v1.63.
 
 ### The wrong way: `grpc.Dial`
 
-[`grpc.Dial`](https://pkg.go.dev/google.golang.org/grpc#Dial) is a deprecated
+[`grpc.Dial`](https://pkg.go.dev/github.com/oodle-ai/grpc-go#Dial) is a deprecated
 function that also creates the same virtual connection pool as `grpc.NewClient`.
 However, unlike `grpc.NewClient`, it immediately starts connecting and supports
 a few additional `DialOption`s that control this initial connection attempt.

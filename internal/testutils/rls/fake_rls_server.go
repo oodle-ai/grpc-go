@@ -25,12 +25,12 @@ import (
 	"sync"
 	"testing"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	rlsgrpc "google.golang.org/grpc/internal/proto/grpc_lookup_v1"
-	rlspb "google.golang.org/grpc/internal/proto/grpc_lookup_v1"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/status"
+	"github.com/oodle-ai/grpc-go"
+	"github.com/oodle-ai/grpc-go/codes"
+	rlsgrpc "github.com/oodle-ai/grpc-go/internal/proto/grpc_lookup_v1"
+	rlspb "github.com/oodle-ai/grpc-go/internal/proto/grpc_lookup_v1"
+	"github.com/oodle-ai/grpc-go/internal/testutils"
+	"github.com/oodle-ai/grpc-go/status"
 )
 
 // RouteLookupResponse wraps an RLS response and the associated error to be sent

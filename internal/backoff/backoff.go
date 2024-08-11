@@ -28,7 +28,7 @@ import (
 	"math/rand"
 	"time"
 
-	grpcbackoff "google.golang.org/grpc/backoff"
+	grpcbackoff "github.com/oodle-ai/grpc-go/backoff"
 )
 
 // Strategy defines the methodology for backing off after a grpc connection

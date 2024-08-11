@@ -1,12 +1,12 @@
-module google.golang.org/grpc/reflection/test
+module github.com/oodle-ai/grpc-go/reflection/test
 
 go 1.21
 
-replace google.golang.org/grpc => ../../
+replace github.com/oodle-ai/grpc-go => ../../
 
 require (
 	github.com/golang/protobuf v1.5.4
-	google.golang.org/grpc v1.64.0
+	github.com/oodle-ai/grpc-go v1.64.0
 	google.golang.org/protobuf v1.34.1
 )
 

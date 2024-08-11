@@ -29,16 +29,16 @@ import (
 	"strconv"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/alts"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/interop"
-	"google.golang.org/grpc/orca"
-	"google.golang.org/grpc/testdata"
+	"github.com/oodle-ai/grpc-go"
+	"github.com/oodle-ai/grpc-go/credentials"
+	"github.com/oodle-ai/grpc-go/credentials/alts"
+	"github.com/oodle-ai/grpc-go/grpclog"
+	"github.com/oodle-ai/grpc-go/internal"
+	"github.com/oodle-ai/grpc-go/interop"
+	"github.com/oodle-ai/grpc-go/orca"
+	"github.com/oodle-ai/grpc-go/testdata"
 
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
+	testgrpc "github.com/oodle-ai/grpc-go/interop/grpc_testing"
 )
 
 var (

@@ -21,12 +21,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"google.golang.org/grpc"
-	estats "google.golang.org/grpc/experimental/stats"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/stats"
-	"google.golang.org/grpc/status"
+	"github.com/oodle-ai/grpc-go"
+	estats "github.com/oodle-ai/grpc-go/experimental/stats"
+	"github.com/oodle-ai/grpc-go/internal"
+	"github.com/oodle-ai/grpc-go/metadata"
+	"github.com/oodle-ai/grpc-go/stats"
+	"github.com/oodle-ai/grpc-go/status"
 
 	otelattribute "go.opentelemetry.io/otel/attribute"
 	otelmetric "go.opentelemetry.io/otel/metric"

@@ -37,12 +37,12 @@ import (
 	"google.golang.org/protobuf/types/known/anypb"
 	"google.golang.org/protobuf/types/known/wrapperspb"
 
-	iresolver "google.golang.org/grpc/internal/resolver"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/internal/testutils/xds/e2e"
-	"google.golang.org/grpc/xds/internal/httpfilter"
-	"google.golang.org/grpc/xds/internal/httpfilter/router"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource/version"
+	iresolver "github.com/oodle-ai/grpc-go/internal/resolver"
+	"github.com/oodle-ai/grpc-go/internal/testutils"
+	"github.com/oodle-ai/grpc-go/internal/testutils/xds/e2e"
+	"github.com/oodle-ai/grpc-go/xds/internal/httpfilter"
+	"github.com/oodle-ai/grpc-go/xds/internal/httpfilter/router"
+	"github.com/oodle-ai/grpc-go/xds/internal/xdsclient/xdsresource/version"
 )
 
 const (

@@ -36,9 +36,9 @@ import (
 	"reflect"
 	"time"
 
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/tls/certprovider"
-	credinternal "google.golang.org/grpc/internal/credentials"
+	"github.com/oodle-ai/grpc-go/credentials"
+	"github.com/oodle-ai/grpc-go/credentials/tls/certprovider"
+	credinternal "github.com/oodle-ai/grpc-go/internal/credentials"
 )
 
 type CertificateChains [][]*x509.Certificate

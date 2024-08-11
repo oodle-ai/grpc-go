@@ -25,19 +25,19 @@ import (
 	"strconv"
 	"testing"
 
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/internal/testutils/xds/e2e"
-	xdsinternal "google.golang.org/grpc/xds/internal"
-	"google.golang.org/grpc/xds/internal/xdsclient"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource/version"
+	"github.com/oodle-ai/grpc-go/connectivity"
+	"github.com/oodle-ai/grpc-go/internal"
+	"github.com/oodle-ai/grpc-go/internal/testutils"
+	"github.com/oodle-ai/grpc-go/internal/testutils/xds/e2e"
+	xdsinternal "github.com/oodle-ai/grpc-go/xds/internal"
+	"github.com/oodle-ai/grpc-go/xds/internal/xdsclient"
+	"github.com/oodle-ai/grpc-go/xds/internal/xdsclient/xdsresource"
+	"github.com/oodle-ai/grpc-go/xds/internal/xdsclient/xdsresource/version"
 
 	v3listenerpb "github.com/envoyproxy/go-control-plane/envoy/config/listener/v3"
 	v3routepb "github.com/envoyproxy/go-control-plane/envoy/config/route/v3"
 
-	_ "google.golang.org/grpc/xds/internal/httpfilter/router" // Register the router filter
+	_ "github.com/oodle-ai/grpc-go/xds/internal/httpfilter/router" // Register the router filter
 )
 
 type verifyMode struct {

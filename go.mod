@@ -1,4 +1,4 @@
-module google.golang.org/grpc
+module github.com/oodle-ai/grpc-go
 
 go 1.21
 

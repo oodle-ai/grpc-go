@@ -25,9 +25,9 @@ import (
 	"math/rand"
 	"sync/atomic"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/base"
-	"google.golang.org/grpc/grpclog"
+	"github.com/oodle-ai/grpc-go/balancer"
+	"github.com/oodle-ai/grpc-go/balancer/base"
+	"github.com/oodle-ai/grpc-go/grpclog"
 )
 
 // Name is the name of round_robin balancer.

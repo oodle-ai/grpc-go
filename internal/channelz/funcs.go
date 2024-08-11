@@ -25,7 +25,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"google.golang.org/grpc/internal"
+	"github.com/oodle-ai/grpc-go/internal"
 )
 
 var (

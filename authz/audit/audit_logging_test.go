@@ -30,19 +30,19 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/authz"
-	"google.golang.org/grpc/authz/audit"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/stubserver"
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/testdata"
+	"github.com/oodle-ai/grpc-go"
+	"github.com/oodle-ai/grpc-go/authz"
+	"github.com/oodle-ai/grpc-go/authz/audit"
+	"github.com/oodle-ai/grpc-go/codes"
+	"github.com/oodle-ai/grpc-go/credentials"
+	"github.com/oodle-ai/grpc-go/internal/grpctest"
+	"github.com/oodle-ai/grpc-go/internal/stubserver"
+	testgrpc "github.com/oodle-ai/grpc-go/interop/grpc_testing"
+	testpb "github.com/oodle-ai/grpc-go/interop/grpc_testing"
+	"github.com/oodle-ai/grpc-go/status"
+	"github.com/oodle-ai/grpc-go/testdata"
 
-	_ "google.golang.org/grpc/authz/audit/stdout"
+	_ "github.com/oodle-ai/grpc-go/authz/audit/stdout"
 )
 
 type s struct {

@@ -28,8 +28,8 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/internal/transport"
-	"google.golang.org/grpc/status"
+	"github.com/oodle-ai/grpc-go/internal/transport"
+	"github.com/oodle-ai/grpc-go/status"
 )
 
 type emptyServiceServer any

@@ -23,8 +23,8 @@ package service
 import (
 	"sync"
 
-	grpc "google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
+	grpc "github.com/oodle-ai/grpc-go"
+	"github.com/oodle-ai/grpc-go/credentials/insecure"
 )
 
 var (

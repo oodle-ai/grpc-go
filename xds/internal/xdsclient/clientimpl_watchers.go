@@ -22,7 +22,7 @@ import (
 	"fmt"
 	"sync"
 
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource"
+	"github.com/oodle-ai/grpc-go/xds/internal/xdsclient/xdsresource"
 )
 
 // WatchResource uses xDS to discover the resource associated with the provided

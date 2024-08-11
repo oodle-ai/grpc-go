@@ -21,12 +21,12 @@ package protoconv
 import (
 	"time"
 
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/status"
+	"github.com/oodle-ai/grpc-go/codes"
+	"github.com/oodle-ai/grpc-go/internal/channelz"
+	"github.com/oodle-ai/grpc-go/status"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	channelzpb "google.golang.org/grpc/channelz/grpc_channelz_v1"
+	channelzpb "github.com/oodle-ai/grpc-go/channelz/grpc_channelz_v1"
 )
 
 func serverToProto(sm *channelz.Server) *channelzpb.Server {

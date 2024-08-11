@@ -27,7 +27,7 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/internal/grpctest"
+	"github.com/oodle-ai/grpc-go/internal/grpctest"
 )
 
 type s struct {

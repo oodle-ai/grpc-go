@@ -19,11 +19,11 @@
 package reflection
 
 import (
-	"google.golang.org/grpc/reflection/internal"
+	"github.com/oodle-ai/grpc-go/reflection/internal"
 
-	v1reflectiongrpc "google.golang.org/grpc/reflection/grpc_reflection_v1"
-	v1reflectionpb "google.golang.org/grpc/reflection/grpc_reflection_v1"
-	v1alphareflectiongrpc "google.golang.org/grpc/reflection/grpc_reflection_v1alpha"
+	v1reflectiongrpc "github.com/oodle-ai/grpc-go/reflection/grpc_reflection_v1"
+	v1reflectionpb "github.com/oodle-ai/grpc-go/reflection/grpc_reflection_v1"
+	v1alphareflectiongrpc "github.com/oodle-ai/grpc-go/reflection/grpc_reflection_v1alpha"
 )
 
 // asV1Alpha returns an implementation of the v1alpha version of the reflection

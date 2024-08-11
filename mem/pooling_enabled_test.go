@@ -26,7 +26,7 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/mem"
+	"github.com/oodle-ai/grpc-go/mem"
 )
 
 // Tests that a buffer created with NewBuffer, which when later freed, invokes

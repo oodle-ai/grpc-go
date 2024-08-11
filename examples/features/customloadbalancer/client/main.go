@@ -25,15 +25,15 @@ import (
 	"strings"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
-	_ "google.golang.org/grpc/examples/features/customloadbalancer/client/customroundrobin" // To register custom_round_robin.
-	pb "google.golang.org/grpc/examples/features/proto/echo"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/peer"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/resolver/manual"
-	"google.golang.org/grpc/serviceconfig"
+	"github.com/oodle-ai/grpc-go"
+	"github.com/oodle-ai/grpc-go/credentials/insecure"
+	_ "github.com/oodle-ai/grpc-go/examples/features/customloadbalancer/client/customroundrobin" // To register custom_round_robin.
+	pb "github.com/oodle-ai/grpc-go/examples/features/proto/echo"
+	"github.com/oodle-ai/grpc-go/internal"
+	"github.com/oodle-ai/grpc-go/peer"
+	"github.com/oodle-ai/grpc-go/resolver"
+	"github.com/oodle-ai/grpc-go/resolver/manual"
+	"github.com/oodle-ai/grpc-go/serviceconfig"
 )
 
 var (

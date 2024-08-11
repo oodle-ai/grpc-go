@@ -25,8 +25,8 @@ import (
 	"os"
 	"time"
 
-	"google.golang.org/grpc/authz/audit"
-	"google.golang.org/grpc/grpclog"
+	"github.com/oodle-ai/grpc-go/authz/audit"
+	"github.com/oodle-ai/grpc-go/grpclog"
 )
 
 var grpcLogger = grpclog.Component("authz-audit")

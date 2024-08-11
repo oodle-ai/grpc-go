@@ -32,14 +32,14 @@ import (
 	"net/url"
 	"time"
 
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/envconfig"
-	"google.golang.org/grpc/internal/googlecloud"
-	internalgrpclog "google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/internal/xds/bootstrap"
-	"google.golang.org/grpc/resolver"
+	"github.com/oodle-ai/grpc-go/grpclog"
+	"github.com/oodle-ai/grpc-go/internal/envconfig"
+	"github.com/oodle-ai/grpc-go/internal/googlecloud"
+	internalgrpclog "github.com/oodle-ai/grpc-go/internal/grpclog"
+	"github.com/oodle-ai/grpc-go/internal/xds/bootstrap"
+	"github.com/oodle-ai/grpc-go/resolver"
 
-	_ "google.golang.org/grpc/xds" // To register xds resolvers and balancers.
+	_ "github.com/oodle-ai/grpc-go/xds" // To register xds resolvers and balancers.
 )
 
 const (

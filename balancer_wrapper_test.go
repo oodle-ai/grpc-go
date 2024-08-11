@@ -24,10 +24,10 @@ import (
 	"sync"
 	"testing"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal/balancer/stub"
-	"google.golang.org/grpc/internal/grpcsync"
+	"github.com/oodle-ai/grpc-go/balancer"
+	"github.com/oodle-ai/grpc-go/credentials/insecure"
+	"github.com/oodle-ai/grpc-go/internal/balancer/stub"
+	"github.com/oodle-ai/grpc-go/internal/grpcsync"
 )
 
 // TestBalancer_StateListenerBeforeConnect tries to stimulate a race between

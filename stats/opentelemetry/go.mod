@@ -1,8 +1,8 @@
-module google.golang.org/grpc/stats/opentelemetry
+module github.com/oodle-ai/grpc-go/stats/opentelemetry
 
 go 1.21
 
-replace google.golang.org/grpc => ../..
+replace github.com/oodle-ai/grpc-go => ../..
 
 require (
 	github.com/envoyproxy/go-control-plane v0.12.1-0.20240621013728-1eb8caab5155
@@ -12,7 +12,7 @@ require (
 	go.opentelemetry.io/otel/metric v1.27.0
 	go.opentelemetry.io/otel/sdk v1.27.0
 	go.opentelemetry.io/otel/sdk/metric v1.27.0
-	google.golang.org/grpc v1.64.0
+	github.com/oodle-ai/grpc-go v1.64.0
 	google.golang.org/protobuf v1.34.1
 )
 

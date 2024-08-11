@@ -26,10 +26,10 @@ import (
 	"os"
 	"strings"
 
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/xds/bootstrap"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/stats/opentelemetry/internal"
+	"github.com/oodle-ai/grpc-go/grpclog"
+	"github.com/oodle-ai/grpc-go/internal/xds/bootstrap"
+	"github.com/oodle-ai/grpc-go/metadata"
+	"github.com/oodle-ai/grpc-go/stats/opentelemetry/internal"
 
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/structpb"

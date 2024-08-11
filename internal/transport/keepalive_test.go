@@ -34,13 +34,13 @@ import (
 	"testing"
 	"time"
 
+	"github.com/oodle-ai/grpc-go/credentials"
+	"github.com/oodle-ai/grpc-go/internal/channelz"
+	"github.com/oodle-ai/grpc-go/internal/grpctest"
+	"github.com/oodle-ai/grpc-go/internal/syscall"
+	"github.com/oodle-ai/grpc-go/keepalive"
+	"github.com/oodle-ai/grpc-go/testdata"
 	"golang.org/x/net/http2"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/syscall"
-	"google.golang.org/grpc/keepalive"
-	"google.golang.org/grpc/testdata"
 )
 
 const defaultTestTimeout = 10 * time.Second

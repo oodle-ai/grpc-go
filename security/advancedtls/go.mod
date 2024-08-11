@@ -1,12 +1,12 @@
-module google.golang.org/grpc/security/advancedtls
+module github.com/oodle-ai/grpc-go/security/advancedtls
 
 go 1.21
 
 require (
 	github.com/google/go-cmp v0.6.0
 	golang.org/x/crypto v0.24.0
-	google.golang.org/grpc v1.64.0
-	google.golang.org/grpc/examples v0.0.0-20201112215255-90f1b3ee835b
+	github.com/oodle-ai/grpc-go v1.64.0
+	github.com/oodle-ai/grpc-go/examples v0.0.0-20201112215255-90f1b3ee835b
 )
 
 require (
@@ -17,6 +17,6 @@ require (
 	google.golang.org/protobuf v1.34.1 // indirect
 )
 
-replace google.golang.org/grpc => ../../
+replace github.com/oodle-ai/grpc-go => ../../
 
-replace google.golang.org/grpc/examples => ../../examples
+replace github.com/oodle-ai/grpc-go/examples => ../../examples

@@ -24,7 +24,7 @@ import (
 	"io"
 	"testing"
 
-	"google.golang.org/grpc/mem"
+	"github.com/oodle-ai/grpc-go/mem"
 )
 
 func (s) TestBufferSlice_Len(t *testing.T) {

@@ -23,8 +23,8 @@ import (
 	"os"
 	"testing"
 
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/testdata"
+	"github.com/oodle-ai/grpc-go/credentials"
+	"github.com/oodle-ai/grpc-go/testdata"
 )
 
 // CreateClientTLSCredentials creates client-side TLS transport credentials

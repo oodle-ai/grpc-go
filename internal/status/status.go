@@ -31,8 +31,8 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/oodle-ai/grpc-go/codes"
 	spb "google.golang.org/genproto/googleapis/rpc/status"
-	"google.golang.org/grpc/codes"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/protoadapt"
 	"google.golang.org/protobuf/types/known/anypb"

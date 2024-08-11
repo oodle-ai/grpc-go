@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/internal/balancer/gracefulswitch"
-	"google.golang.org/grpc/serviceconfig"
+	"github.com/oodle-ai/grpc-go/balancer"
+	"github.com/oodle-ai/grpc-go/internal/balancer/gracefulswitch"
+	"github.com/oodle-ai/grpc-go/serviceconfig"
 )
 
 type parseTestCase struct {

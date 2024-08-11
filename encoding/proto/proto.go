@@ -23,7 +23,7 @@ package proto
 import (
 	"fmt"
 
-	"google.golang.org/grpc/encoding"
+	"github.com/oodle-ai/grpc-go/encoding"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/protoadapt"
 )

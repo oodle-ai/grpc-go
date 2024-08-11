@@ -27,9 +27,9 @@ import (
 	"net/url"
 	"os"
 
-	"google.golang.org/grpc/grpclog"
-	credinternal "google.golang.org/grpc/internal/credentials"
-	"google.golang.org/grpc/internal/envconfig"
+	"github.com/oodle-ai/grpc-go/grpclog"
+	credinternal "github.com/oodle-ai/grpc-go/internal/credentials"
+	"github.com/oodle-ai/grpc-go/internal/envconfig"
 )
 
 var logger = grpclog.Component("credentials")

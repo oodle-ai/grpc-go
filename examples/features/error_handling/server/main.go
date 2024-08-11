@@ -26,11 +26,11 @@ import (
 	"log"
 	"net"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/status"
+	"github.com/oodle-ai/grpc-go"
+	"github.com/oodle-ai/grpc-go/codes"
+	"github.com/oodle-ai/grpc-go/status"
 
-	pb "google.golang.org/grpc/examples/helloworld/helloworld"
+	pb "github.com/oodle-ai/grpc-go/examples/helloworld/helloworld"
 )
 
 var port = flag.Int("port", 50052, "port number")

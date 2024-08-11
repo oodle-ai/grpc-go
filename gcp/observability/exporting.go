@@ -23,10 +23,10 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/oodle-ai/grpc-go"
+	"github.com/oodle-ai/grpc-go/internal"
+	"github.com/oodle-ai/grpc-go/stats/opencensus"
 	"google.golang.org/api/option"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/stats/opencensus"
 
 	gcplogging "cloud.google.com/go/logging"
 )

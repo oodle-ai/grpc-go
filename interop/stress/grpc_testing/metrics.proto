@@ -20,7 +20,7 @@
 // service.
 syntax = "proto3";
 
-option go_package = "google.golang.org/grpc/interop/stress/grpc_testing";
+option go_package = "github.com/oodle-ai/grpc-go/interop/stress/grpc_testing";
 
 package grpc.testing;
 

@@ -26,10 +26,10 @@ import (
 	"net"
 	"net/http"
 
-	"google.golang.org/grpc"
-	pb "google.golang.org/grpc/examples/features/proto/echo"
-	"google.golang.org/grpc/stats/opentelemetry"
-	"google.golang.org/grpc/stats/opentelemetry/csm"
+	"github.com/oodle-ai/grpc-go"
+	pb "github.com/oodle-ai/grpc-go/examples/features/proto/echo"
+	"github.com/oodle-ai/grpc-go/stats/opentelemetry"
+	"github.com/oodle-ai/grpc-go/stats/opentelemetry/csm"
 
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"go.opentelemetry.io/otel/exporters/prometheus"

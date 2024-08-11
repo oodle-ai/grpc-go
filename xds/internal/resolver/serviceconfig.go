@@ -29,17 +29,17 @@ import (
 	"time"
 
 	xxhash "github.com/cespare/xxhash/v2"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal/grpcutil"
-	iresolver "google.golang.org/grpc/internal/resolver"
-	"google.golang.org/grpc/internal/serviceconfig"
-	"google.golang.org/grpc/internal/wrr"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/xds/internal/balancer/clustermanager"
-	"google.golang.org/grpc/xds/internal/balancer/ringhash"
-	"google.golang.org/grpc/xds/internal/httpfilter"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource"
+	"github.com/oodle-ai/grpc-go/codes"
+	"github.com/oodle-ai/grpc-go/internal/grpcutil"
+	iresolver "github.com/oodle-ai/grpc-go/internal/resolver"
+	"github.com/oodle-ai/grpc-go/internal/serviceconfig"
+	"github.com/oodle-ai/grpc-go/internal/wrr"
+	"github.com/oodle-ai/grpc-go/metadata"
+	"github.com/oodle-ai/grpc-go/status"
+	"github.com/oodle-ai/grpc-go/xds/internal/balancer/clustermanager"
+	"github.com/oodle-ai/grpc-go/xds/internal/balancer/ringhash"
+	"github.com/oodle-ai/grpc-go/xds/internal/httpfilter"
+	"github.com/oodle-ai/grpc-go/xds/internal/xdsclient/xdsresource"
 )
 
 const (

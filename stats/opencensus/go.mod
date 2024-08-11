@@ -1,11 +1,11 @@
-module google.golang.org/grpc/stats/opencensus
+module github.com/oodle-ai/grpc-go/stats/opencensus
 
 go 1.21
 
 require (
 	github.com/google/go-cmp v0.6.0
 	go.opencensus.io v0.24.0
-	google.golang.org/grpc v1.64.0
+	github.com/oodle-ai/grpc-go v1.64.0
 )
 
 require (
@@ -17,4 +17,4 @@ require (
 	google.golang.org/protobuf v1.34.1 // indirect
 )
 
-replace google.golang.org/grpc => ../..
+replace github.com/oodle-ai/grpc-go => ../..

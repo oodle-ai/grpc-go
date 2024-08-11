@@ -25,12 +25,12 @@ import (
 	"os"
 	"os/exec"
 
-	"google.golang.org/grpc"
-	channelzgrpc "google.golang.org/grpc/channelz/grpc_channelz_v1"
-	channelzpb "google.golang.org/grpc/channelz/grpc_channelz_v1"
-	"google.golang.org/grpc/credentials/insecure"
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
+	"github.com/oodle-ai/grpc-go"
+	channelzgrpc "github.com/oodle-ai/grpc-go/channelz/grpc_channelz_v1"
+	channelzpb "github.com/oodle-ai/grpc-go/channelz/grpc_channelz_v1"
+	"github.com/oodle-ai/grpc-go/credentials/insecure"
+	testgrpc "github.com/oodle-ai/grpc-go/interop/grpc_testing"
+	testpb "github.com/oodle-ai/grpc-go/interop/grpc_testing"
 )
 
 func cmd(path string, logger io.Writer, args []string, env []string) *exec.Cmd {

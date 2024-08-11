@@ -1,4 +1,4 @@
-module google.golang.org/grpc/test/tools
+module github.com/oodle-ai/grpc-go/test/tools
 
 go 1.21
 

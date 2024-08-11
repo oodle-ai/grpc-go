@@ -26,7 +26,7 @@ import (
 	v2endpointpb "github.com/envoyproxy/go-control-plane/envoy/api/v2/endpoint"
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
 	v2typepb "github.com/envoyproxy/go-control-plane/envoy/type"
-	"google.golang.org/grpc/xds/internal"
+	"github.com/oodle-ai/grpc-go/xds/internal"
 	"google.golang.org/protobuf/types/known/wrapperspb"
 )
 

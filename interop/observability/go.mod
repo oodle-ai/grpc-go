@@ -1,10 +1,10 @@
-module google.golang.org/grpc/interop/observability
+module github.com/oodle-ai/grpc-go/interop/observability
 
 go 1.21
 
 require (
-	google.golang.org/grpc v1.64.0
-	google.golang.org/grpc/gcp/observability v1.0.1
+	github.com/oodle-ai/grpc-go v1.64.0
+	github.com/oodle-ai/grpc-go/gcp/observability v1.0.1
 )
 
 require (
@@ -43,7 +43,7 @@ require (
 	github.com/googleapis/enterprise-certificate-proxy v0.3.2 // indirect
 	github.com/googleapis/gax-go/v2 v2.12.4 // indirect
 	go.opencensus.io v0.24.0 // indirect
-	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.52.0 // indirect
+	go.opentelemetry.io/contrib/instrumentation/github.com/oodle-ai/grpc-go/otelgrpc v0.52.0 // indirect
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.52.0 // indirect
 	go.opentelemetry.io/otel v1.27.0 // indirect
 	go.opentelemetry.io/otel/metric v1.27.0 // indirect
@@ -59,12 +59,12 @@ require (
 	google.golang.org/genproto v0.0.0-20240604185151-ef581f913117 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20240604185151-ef581f913117 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20240604185151-ef581f913117 // indirect
-	google.golang.org/grpc/stats/opencensus v1.0.0 // indirect
+	github.com/oodle-ai/grpc-go/stats/opencensus v1.0.0 // indirect
 	google.golang.org/protobuf v1.34.1 // indirect
 )
 
-replace google.golang.org/grpc => ../..
+replace github.com/oodle-ai/grpc-go => ../..
 
-replace google.golang.org/grpc/gcp/observability => ../../gcp/observability
+replace github.com/oodle-ai/grpc-go/gcp/observability => ../../gcp/observability
 
-replace google.golang.org/grpc/stats/opencensus => ../../stats/opencensus
+replace github.com/oodle-ai/grpc-go/stats/opencensus => ../../stats/opencensus

@@ -1,9 +1,9 @@
-module google.golang.org/grpc/cmd/protoc-gen-go-grpc
+module github.com/oodle-ai/grpc-go/cmd/protoc-gen-go-grpc
 
 go 1.21
 
 require (
-	google.golang.org/grpc v1.65.0
+	github.com/oodle-ai/grpc-go v1.65.0
 	google.golang.org/protobuf v1.34.1
 )
 

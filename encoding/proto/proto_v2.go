@@ -21,8 +21,8 @@ package proto
 import (
 	"fmt"
 
-	"google.golang.org/grpc/encoding"
-	"google.golang.org/grpc/mem"
+	"github.com/oodle-ai/grpc-go/encoding"
+	"github.com/oodle-ai/grpc-go/mem"
 	"google.golang.org/protobuf/proto"
 )
 

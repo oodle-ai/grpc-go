@@ -25,15 +25,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/rls/internal/keys"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/connectivity"
-	estats "google.golang.org/grpc/experimental/stats"
-	internalgrpclog "google.golang.org/grpc/internal/grpclog"
-	rlspb "google.golang.org/grpc/internal/proto/grpc_lookup_v1"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/status"
+	"github.com/oodle-ai/grpc-go/balancer"
+	"github.com/oodle-ai/grpc-go/balancer/rls/internal/keys"
+	"github.com/oodle-ai/grpc-go/codes"
+	"github.com/oodle-ai/grpc-go/connectivity"
+	estats "github.com/oodle-ai/grpc-go/experimental/stats"
+	internalgrpclog "github.com/oodle-ai/grpc-go/internal/grpclog"
+	rlspb "github.com/oodle-ai/grpc-go/internal/proto/grpc_lookup_v1"
+	"github.com/oodle-ai/grpc-go/metadata"
+	"github.com/oodle-ai/grpc-go/status"
 )
 
 var (

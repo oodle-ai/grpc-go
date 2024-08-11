@@ -19,8 +19,8 @@ package stats
 import (
 	"fmt"
 
-	estats "google.golang.org/grpc/experimental/stats"
-	"google.golang.org/grpc/stats"
+	estats "github.com/oodle-ai/grpc-go/experimental/stats"
+	"github.com/oodle-ai/grpc-go/stats"
 )
 
 // MetricsRecorderList forwards Record calls to all of its metricsRecorders.

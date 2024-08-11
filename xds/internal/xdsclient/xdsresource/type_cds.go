@@ -20,7 +20,7 @@ package xdsresource
 import (
 	"encoding/json"
 
-	"google.golang.org/grpc/internal/xds/bootstrap"
+	"github.com/oodle-ai/grpc-go/internal/xds/bootstrap"
 	"google.golang.org/protobuf/types/known/anypb"
 )
 

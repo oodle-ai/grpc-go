@@ -30,24 +30,24 @@ import (
 	"github.com/envoyproxy/go-control-plane/pkg/wellknown"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/uuid"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/grpcsync"
-	iresolver "google.golang.org/grpc/internal/resolver"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/internal/testutils/xds/e2e"
-	"google.golang.org/grpc/internal/xds/bootstrap"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/xds/internal/balancer/clustermanager"
-	"google.golang.org/grpc/xds/internal/balancer/ringhash"
-	"google.golang.org/grpc/xds/internal/httpfilter"
-	xdsresolver "google.golang.org/grpc/xds/internal/resolver"
-	rinternal "google.golang.org/grpc/xds/internal/resolver/internal"
-	"google.golang.org/grpc/xds/internal/xdsclient"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource/version"
+	"github.com/oodle-ai/grpc-go/codes"
+	"github.com/oodle-ai/grpc-go/internal"
+	"github.com/oodle-ai/grpc-go/internal/grpcsync"
+	iresolver "github.com/oodle-ai/grpc-go/internal/resolver"
+	"github.com/oodle-ai/grpc-go/internal/testutils"
+	"github.com/oodle-ai/grpc-go/internal/testutils/xds/e2e"
+	"github.com/oodle-ai/grpc-go/internal/xds/bootstrap"
+	"github.com/oodle-ai/grpc-go/metadata"
+	"github.com/oodle-ai/grpc-go/resolver"
+	"github.com/oodle-ai/grpc-go/serviceconfig"
+	"github.com/oodle-ai/grpc-go/status"
+	"github.com/oodle-ai/grpc-go/xds/internal/balancer/clustermanager"
+	"github.com/oodle-ai/grpc-go/xds/internal/balancer/ringhash"
+	"github.com/oodle-ai/grpc-go/xds/internal/httpfilter"
+	xdsresolver "github.com/oodle-ai/grpc-go/xds/internal/resolver"
+	rinternal "github.com/oodle-ai/grpc-go/xds/internal/resolver/internal"
+	"github.com/oodle-ai/grpc-go/xds/internal/xdsclient"
+	"github.com/oodle-ai/grpc-go/xds/internal/xdsclient/xdsresource/version"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"
 	"google.golang.org/protobuf/types/known/durationpb"
@@ -62,8 +62,8 @@ import (
 	v3httppb "github.com/envoyproxy/go-control-plane/envoy/extensions/filters/network/http_connection_manager/v3"
 	v3discoverypb "github.com/envoyproxy/go-control-plane/envoy/service/discovery/v3"
 
-	_ "google.golang.org/grpc/xds/internal/balancer/cdsbalancer" // Register the cds LB policy
-	_ "google.golang.org/grpc/xds/internal/httpfilter/router"    // Register the router filter
+	_ "github.com/oodle-ai/grpc-go/xds/internal/balancer/cdsbalancer" // Register the cds LB policy
+	_ "github.com/oodle-ai/grpc-go/xds/internal/httpfilter/router"    // Register the router filter
 )
 
 // Tests the case where xDS client creation is expected to fail because the

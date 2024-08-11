@@ -21,9 +21,9 @@ import (
 	"errors"
 	"fmt"
 
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/internal/xds/bootstrap"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource"
+	"github.com/oodle-ai/grpc-go/internal/grpclog"
+	"github.com/oodle-ai/grpc-go/internal/xds/bootstrap"
+	"github.com/oodle-ai/grpc-go/xds/internal/xdsclient/xdsresource"
 )
 
 // findAuthority returns the authority for this name. If it doesn't already

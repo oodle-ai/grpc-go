@@ -22,10 +22,10 @@ import (
 	"context"
 	"sync"
 
-	"google.golang.org/grpc"
-	grpcinternal "google.golang.org/grpc/internal"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/orca/internal"
+	"github.com/oodle-ai/grpc-go"
+	grpcinternal "github.com/oodle-ai/grpc-go/internal"
+	"github.com/oodle-ai/grpc-go/metadata"
+	"github.com/oodle-ai/grpc-go/orca/internal"
 	"google.golang.org/protobuf/proto"
 )
 

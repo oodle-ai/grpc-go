@@ -19,7 +19,7 @@
 package testutils
 
 import (
-	"google.golang.org/grpc/status"
+	"github.com/oodle-ai/grpc-go/status"
 	"google.golang.org/protobuf/proto"
 )
 

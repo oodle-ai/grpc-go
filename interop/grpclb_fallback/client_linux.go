@@ -29,16 +29,16 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/oodle-ai/grpc-go"
+	_ "github.com/oodle-ai/grpc-go/balancer/grpclb"
+	"github.com/oodle-ai/grpc-go/credentials"
+	"github.com/oodle-ai/grpc-go/credentials/alts"
+	"github.com/oodle-ai/grpc-go/credentials/google"
+	_ "github.com/oodle-ai/grpc-go/xds/googledirectpath"
 	"golang.org/x/sys/unix"
-	"google.golang.org/grpc"
-	_ "google.golang.org/grpc/balancer/grpclb"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/alts"
-	"google.golang.org/grpc/credentials/google"
-	_ "google.golang.org/grpc/xds/googledirectpath"
 
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
+	testgrpc "github.com/oodle-ai/grpc-go/interop/grpc_testing"
+	testpb "github.com/oodle-ai/grpc-go/interop/grpc_testing"
 )
 
 var (

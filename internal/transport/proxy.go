@@ -29,7 +29,7 @@ import (
 	"net/http/httputil"
 	"net/url"
 
-	"google.golang.org/grpc/internal"
+	"github.com/oodle-ai/grpc-go/internal"
 )
 
 const proxyAuthHeaderKey = "Proxy-Authorization"

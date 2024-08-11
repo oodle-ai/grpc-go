@@ -25,12 +25,12 @@ import (
 	"sync"
 	"testing"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/interop"
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
-	"google.golang.org/grpc/peer"
-	"google.golang.org/grpc/stats"
+	"github.com/oodle-ai/grpc-go"
+	"github.com/oodle-ai/grpc-go/credentials/insecure"
+	"github.com/oodle-ai/grpc-go/interop"
+	testgrpc "github.com/oodle-ai/grpc-go/interop/grpc_testing"
+	"github.com/oodle-ai/grpc-go/peer"
+	"github.com/oodle-ai/grpc-go/stats"
 )
 
 // TestPeerForClientStatsHandler configures a stats handler that
