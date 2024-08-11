@@ -2,6 +2,10 @@ module github.com/oodle-ai/grpc-go
 
 go 1.21
 
+replace (
+	google.golang.org/grpc => github.com/oodle-ai/grpc-go v1.66.0-dev.0.20240811034528-64561cd61111
+)
+
 require (
 	github.com/cespare/xxhash/v2 v2.3.0
 	github.com/cncf/xds/go v0.0.0-20240423153145-555b57ec207b
