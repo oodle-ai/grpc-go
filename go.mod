@@ -2,9 +2,7 @@ module github.com/oodle-ai/grpc-go
 
 go 1.21
 
-replace (
-	google.golang.org/grpc => github.com/oodle-ai/grpc-go v1.66.0-dev.0.20240811034528-64561cd61111
-)
+replace google.golang.org/grpc => github.com/oodle-ai/grpc-go v1.66.0-dev.0.20240811034528-64561cd61111
 
 require (
 	github.com/cespare/xxhash/v2 v2.3.0
@@ -29,4 +27,5 @@ require (
 	github.com/planetscale/vtprotobuf v0.6.1-0.20240319094008-0393e58bdf10 // indirect
 	golang.org/x/text v0.16.0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20240604185151-ef581f913117 // indirect
+	google.golang.org/grpc v1.64.0 // indirect
 )
