@@ -825,7 +825,7 @@ func recvAndDecompress(p *parser, s *transport.Stream, dc Decompressor, maxRecei
 
 	if st := checkRecvPayload(pf, s.RecvCompress(), compressor != nil || dc != nil, isServer); st != nil {
 		compressed.Free()
-		return nil, nil, st.Err()
+		return nil, st.Err()
 	}
 
 	var size int
